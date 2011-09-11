@@ -9,7 +9,7 @@ if !r.exists(:devices)
 	device = y['Devices']
 
 	device.each do |d|
-		r.zadd(:devices,0,d)
+		r.sadd(:devices,d)
 	end
 else
 	puts "Device List already up to date!!!"
