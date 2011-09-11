@@ -14,3 +14,5 @@ if !r.exists(:devices)
 else
 	puts "Device List already up to date!!!"
 end
+
+puts r.smembers(:devices)
